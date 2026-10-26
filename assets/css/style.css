@@ -1,0 +1,37 @@
+/* Estilos Institucionales C.E. Refugio Sifontes */
+
+/* Color azul institucional para la barra de navegación */
+.bg-institucional {
+    background-color: #0d3b66 !important;
+}
+
+/* Banner de bienvenida */
+.hero-section {
+    background: linear-gradient(rgba(13, 59, 102, 0.85), rgba(13, 59, 102, 0.85)), 
+                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200') center/cover no-repeat;
+    min-height: 60vh;
+}
+
+/* Color primario personalizado */
+.text-primary {
+    color: #0d3b66 !important;
+}
+
+.btn-primary {
+    background-color: #0d3b66;
+    border-color: #0d3b66;
+}
+
+.btn-primary:hover {
+    background-color: #092846;
+    border-color: #092846;
+}
+
+/* Transiciones suaves en las tarjetas */
+.card {
+    transition: transform 0.2s ease, shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
