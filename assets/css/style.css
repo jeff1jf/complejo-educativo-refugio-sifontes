@@ -1,24 +1,24 @@
 /* ==========================================
-   ESTILOS NEÓN - C.E. REFUGIO SIFONTES
+   ESTILOS CORPORATIVOS ELEGANTES - TECH
    ========================================== */
 
 :root {
-    --bg-deep: #000000;
-    --bg-card: #0a0a0a;
-    --neon-yellow: #f3e600;
-    --neon-red: #ff073a;
-    --text-main: #f5f5f5;
-    --text-muted: #a0a0a0;
+    --bg-deep: #050505;
+    --bg-card: #0d0d0d;
+    --neon-yellow: #e6d200;
+    --neon-red: #e62e4d;
+    --text-main: #e8e8e8;
+    --text-muted: #999999;
 }
 
 body {
     background-color: var(--bg-deep) !important;
     color: var(--text-main) !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;
 }
 
-/* Fondos personalizados */
+/* Fondos */
 .bg-black-custom {
     background-color: var(--bg-deep) !important;
 }
@@ -27,118 +27,116 @@ body {
     background-color: var(--bg-card) !important;
 }
 
-/* Colores de Texto Neón */
+/* Tipografía y acentos sobrios */
 .text-yellow {
     color: var(--neon-yellow) !important;
-    text-shadow: 0 0 10px rgba(243, 230, 0, 0.4);
 }
 
 .text-red {
     color: var(--neon-red) !important;
-    text-shadow: 0 0 10px rgba(255, 7, 58, 0.4);
 }
 
 .text-light-gray {
     color: var(--text-muted);
 }
 
-/* Botones con efecto Neón Interactivo */
+/* Botones formales con resplandor sutil en borde */
 .btn-yellow {
     background-color: var(--neon-yellow);
     color: #000000;
-    border: 2px solid var(--neon-yellow);
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--neon-yellow);
+    font-weight: 600;
+    transition: all 0.25s ease;
 }
 
 .btn-yellow:hover {
-    background-color: #000000;
-    color: var(--neon-yellow);
-    border-color: var(--neon-yellow);
-    box-shadow: 0 0 20px var(--neon-yellow);
-    transform: translateY(-3px);
+    background-color: #d4c000;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(230, 210, 0, 0.3);
 }
 
 .btn-outline-red {
     color: var(--neon-red);
-    border: 2px solid var(--neon-red);
+    border: 1px solid var(--neon-red);
     background: transparent;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    transition: all 0.25s ease;
 }
 
 .btn-outline-red:hover {
     background-color: var(--neon-red);
     color: #ffffff;
-    box-shadow: 0 0 20px var(--neon-red);
-    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(230, 46, 77, 0.3);
 }
 
-.bg-red {
-    background-color: var(--neon-red) !important;
-    color: #fff;
-    box-shadow: 0 0 12px rgba(255, 7, 58, 0.6);
+/* Badge elegante */
+.badge-tech {
+    background-color: rgba(230, 46, 77, 0.15);
+    color: var(--neon-red);
+    border: 1px solid rgba(230, 46, 77, 0.3);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
 }
 
 /* Barra de Navegación */
 .custom-nav {
-    background-color: rgba(0, 0, 0, 0.95) !important;
-    backdrop-filter: blur(8px);
-    border-bottom: 2px solid #1a1a1a;
+    background-color: rgba(5, 5, 5, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1a1a1a;
 }
 
 .navbar-nav .nav-link {
-    color: #e0e0e0 !important;
-    font-weight: 500;
+    color: #cccccc !important;
+    font-size: 0.95rem;
+    font-weight: 400;
     transition: color 0.2s ease;
-    margin-right: 12px;
+    margin-right: 15px;
 }
 
 .navbar-nav .nav-link:hover {
     color: var(--neon-yellow) !important;
-    text-shadow: 0 0 10px var(--neon-yellow);
 }
 
-/* Banner Hero con atmósfera oscura y destellos */
+/* Banner Hero sobrio */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), 
+    background: linear-gradient(rgba(5, 5, 5, 0.92), rgba(5, 5, 5, 0.98)), 
                 url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200') center/cover no-repeat;
-    min-height: 85vh;
-    border-bottom: 3px solid var(--neon-red);
+    min-height: 80vh;
+    border-bottom: 1px solid #1f1f1f;
 }
 
-/* Tarjetas con bordes e iluminación neón interactiva */
+/* Tarjetas: Solo un borde fino y brillo sutil al pasar el cursor (nada saturado) */
 .tech-card {
-    background-color: #080808;
-    border: 1px solid #222 !important;
-    border-radius: 12px;
-    transition: all 0.3s ease-in-out;
-}
-
-.tech-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--neon-yellow) !important;
-    box-shadow: 0 0 20px rgba(243, 230, 0, 0.25);
-}
-
-/* Contenedores especiales */
-.border-tech {
-    border: 1px solid #262626;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255, 7, 58, 0.1);
-}
-
-/* Formularios adaptados al estilo tech-neón */
-.input-tech {
-    background-color: #0d0d0d !important;
-    border: 1px solid #333 !important;
-    color: #fff !important;
+    background-color: #0b0b0b;
+    border: 1px solid #1c1c1c !important;
+    border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-.input-tech:focus {
-    background-color: #0d0d0d !important;
+.tech-card:hover {
+    transform: translateY(-4px);
     border-color: var(--neon-yellow) !important;
-    box-shadow: 0 0 12px rgba(243, 230, 0, 0.4);
+    box-shadow: 0 0 12px rgba(230, 210, 0, 0.15);
+}
+
+/* Contenedores y secciones */
+.border-tech {
+    border: 1px solid #1f1f1f;
+    border-radius: 8px;
+}
+
+/* Formularios profesionales y limpios */
+.input-tech {
+    background-color: #080808 !important;
+    border: 1px solid #262626 !important;
+    color: #fff !important;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.input-tech:focus {
+    background-color: #080808 !important;
+    border-color: var(--neon-yellow) !important;
+    box-shadow: 0 0 8px rgba(230, 210, 0, 0.2);
     color: #fff !important;
 }
