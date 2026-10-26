@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complejo Educativo Refugio Sifontes</title>
+    <title>C.E. Refugio Sifontes | Infraestructura Tecnológica y Servicios Informáticos</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome para Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Estilos Personalizados -->
+    <!-- Estilos Personalizados Dark/Tech -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-institucional sticky-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg custom-nav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="fa-solid fa-school me-2"></i>C.E. Refugio Sifontes
+            <a class="navbar-brand fw-bold text-yellow" href="index.html">
+                <i class="fa-solid fa-terminal me-2"></i>C.E. Refugio Sifontes
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#oferta">Oferta Académica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#especialidad">Especialidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#instalaciones">Instalaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#admision">Admisión 2026</a></li>
                 </ul>
             </div>
         </div>
@@ -35,105 +35,153 @@
 
     <!-- Banner Principal (Hero) -->
     <header class="hero-section text-white text-center d-flex align-items-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Complejo Educativo Refugio Sifontes</h1>
-            <p class="lead my-3">Educando con excelencia, valores y compromiso hacia el futuro.</p>
-            <a href="#contacto" class="btn btn-warning btn-lg fw-bold mt-2">Más Información</a>
+        <div class="container py-5">
+            <span class="badge bg-red mb-3 px-3 py-2 text-uppercase fw-bold tracking-wide">Bachillerato Técnico Vocacional</span>
+            <h1 class="display-4 fw-bold text-uppercase text-glow">Infraestructura Tecnológica y Servicios Informáticos</h1>
+            <p class="lead my-3 text-light-gray">Domina el hardware, la ciberseguridad, bases de datos, desarrollo de software y herramientas de Inteligencia Artificial.</p>
+            <div class="mt-4">
+                <a href="#admision" class="btn btn-yellow btn-lg fw-bold me-2 mb-2 shadow-hover">Solicitar Matrícula</a>
+                <a href="#especialidad" class="btn btn-outline-red btn-lg fw-bold mb-2">Explorar Áreas</a>
+            </div>
         </div>
     </header>
 
-    <!-- Sección Nosotros -->
-    <section id="nosotros" class="py-5">
+    <!-- Sección Especialidades / Áreas Clave (Interactivo con Tarjetas) -->
+    <section id="especialidad" class="py-5 bg-black-custom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-yellow">Áreas Clave de Formación</h2>
+                <p class="text-muted">Un plan de estudio moderno adaptado a las demandas tecnológicas actuales.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-4">
+                    <div class="card tech-card h-100 p-4 border-0">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-microchip fa-3x"></i></div>
+                            <h5 class="card-title fw-bold text-white">Mantenimiento de Computadoras</h5>
+                            <p class="card-text text-muted">Diagnóstico, reparación física y lógica de equipos de cómputo y ensamblaje avanzado.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-md-4">
+                    <div class="card tech-card h-100 p-4 border-0">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-database fa-3x"></i></div>
+                            <h5 class="card-title fw-bold text-white">Uso de MySQL</h5>
+                            <p class="card-text text-muted">Gestión, diseño y administración de bases de datos relacionales eficientes y seguras.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-md-4">
+                    <div class="card tech-card h-100 p-4 border-0">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-robot fa-3x"></i></div>
+                            <h5 class="card-title fw-bold text-white">Inteligencia Artificial (IA)</h5>
+                            <p class="card-text text-muted">Aprendizaje y aprovechamiento práctico de herramientas de IA para optimizar procesos técnicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="col-md-4">
+                    <div class="card tech-card h-100 p-4 border-0">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-chart-line fa-3x"></i></div>
+                            <h5 class="card-title fw-bold text-white">Apoyo para Emprendedores</h5>
+                            <p class="card-text text-muted">Módulos especializados para impulsar proyectos tecnológicos y emprendimientos digitales.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 5 -->
+                <div class="col-md-4">
+                    <div class="card tech-card h-100 p-4 border-0">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-code fa-3x"></i></div>
+                            <h5 class="card-title fw-bold text-white">Lenguajes de Programación</h5>
+                            <p class="card-text text-muted">Práctica con múltiples lenguajes de programación variados para la creación de software funcional.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 6 -->
+                <div class="col-md-4">
+                    <div class="card tech-card h-100 p-4 border-0">
+                        <div class="card-body text-center">
+                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-shield-halved fa-3x"></i></div>
+                            <h5 class="card-title fw-bold text-white">Ciberseguridad</h5>
+                            <p class="card-text text-muted">Fundamentos de protección de datos, redes seguras y prevención de vulnerabilidades informáticas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Instalaciones -->
+    <section id="instalaciones" class="py-5 bg-dark-custom">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="fw-bold text-primary mb-3">Sobre Nuestra Institución</h2>
-                    <p>En el Complejo Educativo Refugio Sifontes nos dedicamos a brindar una formación integral a nuestros estudiantes, impulsando sus competencias académicas, humanas y tecnológicas en un entorno seguro y estructurado.</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-check text-success me-2"></i> Personal docente capacitado.</li>
-                        <li><i class="fa-solid fa-check text-success me-2"></i> Ambientes propicios para el aprendizaje.</li>
-                        <li><i class="fa-solid fa-check text-success me-2"></i> Formación académica y en valores.</li>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="fw-bold text-red mb-3">Infraestructura y Equipamiento</h2>
+                    <p class="text-light-gray">Contamos con espacios diseñados para potenciar el aprendizaje práctico de nuestros estudiantes:</p>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-3"><i class="fa-solid fa-circle-check text-yellow me-2"></i> **Centro de Cómputo:** Equipado para prácticas de redes, programación, mantenimiento y simulación.</li>
+                        <li><i class="fa-solid fa-circle-check text-yellow me-2"></i> **Biblioteca:** Espacio de consulta bibliográfica e investigación tecnológica y general.</li>
                     </ul>
                 </div>
                 <div class="col-md-6 text-center">
-                    <div class="card bg-light p-4 shadow-sm border-0">
-                        <i class="fa-solid fa-graduation-cap fa-5x text-primary mb-3"></i>
-                        <h4>Formación Integral</h4>
-                        <p class="text-muted">Comprometidos con el desarrollo de la juventud.</p>
+                    <div class="p-4 border-tech rounded bg-black-custom shadow-lg">
+                        <i class="fa-solid fa-server fa-5x text-yellow mb-3"></i>
+                        <h4 class="text-white">Ambiente 100% Práctico</h4>
+                        <p class="text-muted small">Preparación directa para los retos del mundo tecnológico actual.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Oferta Académica -->
-    <section id="oferta" class="py-5 bg-light">
+    <!-- Sección Formulario de Admisión / Matrícula Directa -->
+    <section id="admision" class="py-5 bg-black-custom border-top border-dark">
         <div class="container">
-            <h2 class="text-center fw-bold text-primary mb-4">Oferta Académica</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-3">
-                        <div class="card-body">
-                            <i class="fa-solid fa-child fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Educación Parvularia</h5>
-                            <p class="card-text text-muted">Desarrollo de habilidades motrices y de convivencia para los más pequeños.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-3">
-                        <div class="card-body">
-                            <i class="fa-solid fa-book-open fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Educación Básica</h5>
-                            <p class="card-text text-muted">Primero, segundo y tercer ciclo enfocados en fundamentos académicos sólidos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-3">
-                        <div class="card-body">
-                            <i class="fa-solid fa-user-graduate fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Bachillerato</h5>
-                            <p class="card-text text-muted">Preparación académica y técnica orientada a la educación superior y el entorno laboral.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="py-5">
-        <div class="container">
-            <h2 class="text-center fw-bold text-primary mb-4">Contacto y Consultas</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <!-- Formulario con Formspree para enviar correos directamente -->
-                    <form action="https://formspree.io/f/xbjnqpyz" method="POST" class="card p-4 shadow-sm border-0">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label font-weight-bold">Nombre completo</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    <div class="card p-4 p-md-5 border-tech bg-dark-custom shadow-lg">
+                        <div class="text-center mb-4">
+                            <h2 class="fw-bold text-yellow">Solicitud de Matrícula y Admisión</h2>
+                            <p class="text-muted small">¿Interesado en el Técnico en Infraestructura Tecnológica y Servicios Informáticos? Envía tus datos y nos pondremos en contacto.</p>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" name="email" required placeholder="correo@ejemplo.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Consulta o Mensaje</label>
-                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu consulta aquí..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 fw-bold">Enviar Consulta</button>
-                    </form>
+                        <!-- Formulario conectado a Formspree -->
+                        <form action="https://formspree.io/f/xbjnqpyz" method="POST">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label text-white">Nombre del Estudiante o Padre/Madre</label>
+                                <input type="text" class="form-control input-tech" id="nombre" name="nombre" required placeholder="Nombre completo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-white">Correo Electrónico de Contacto</label>
+                                <input type="email" class="form-control input-tech" id="email" name="email" required placeholder="correo@ejemplo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label text-white">Número de Teléfono / WhatsApp</label>
+                                <input type="tel" class="form-control input-tech" id="telefono" name="telefono" required placeholder="Número de contacto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label text-white">Pregunta o Comentario Adicional</label>
+                                <textarea class="form-control input-tech" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tus dudas sobre el proceso de admisión..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-yellow w-100 fw-bold py-3 mt-2">Enviar Solicitud de Admisión</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pie de Página -->
-    <footer class="bg-dark text-white py-4 text-center">
+    <footer class="bg-black text-center py-4 border-top border-dark">
         <div class="container">
-            <p class="mb-1">&copy; 2026 Complejo Educativo Refugio Sifontes.</p>
-            <p class="small text-muted mb-0">Sitio oficial publicado a través de GitHub Pages.</p>
+            <p class="mb-1 text-muted">&copy; 2026 Complejo Educativo Refugio Sifontes.</p>
+            <p class="small text-red mb-0">Bachillerato Técnico Vocacional en Infraestructura Tecnológica y Servicios Informáticos.</p>
         </div>
     </footer>
 
