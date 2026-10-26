@@ -46,81 +46,101 @@
         </div>
     </header>
 
-    <!-- Sección Especialidades / Áreas Clave -->
+    <!-- Sección Especialidades / Áreas Clave con Clic Interactivo -->
     <section id="especialidad" class="py-5 bg-black-custom">
         <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="fw-bold text-yellow">Áreas Clave de Formación</h2>
-                <p class="text-muted">Competencias técnicas diseñadas para la alta exigencia del mercado actual.</p>
+                <p class="text-muted">Haz clic en cualquier tarjeta para ver la información detallada del módulo.</p>
             </div>
             <div class="row g-4">
-                <!-- Tarjeta 1 -->
+                <!-- Tarjeta 1: Mantenimiento -->
                 <div class="col-md-4">
-                    <div class="card tech-card h-100 p-4 border-0">
+                    <div class="card tech-card h-100 border-0 cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalMantenimiento">
+                        <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=600" class="card-img-top tech-card-img" alt="Mantenimiento de computadoras">
                         <div class="card-body">
-                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-microchip fa-2x"></i></div>
+                            <div class="icon-box mb-2 text-red"><i class="fa-solid fa-microchip fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Mantenimiento de Computadoras</h5>
                             <p class="card-text text-muted small">Diagnóstico, reparación física y lógica de equipos de cómputo y ensamblaje avanzado.</p>
+                            <span class="text-yellow small fw-semibold">Ver más detalles <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta 2 -->
+
+                <!-- Tarjeta 2: MySQL -->
                 <div class="col-md-4">
-                    <div class="card tech-card h-100 p-4 border-0">
+                    <div class="card tech-card h-100 border-0 cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalMySQL">
+                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=600" class="card-img-top tech-card-img" alt="Bases de Datos MySQL">
                         <div class="card-body">
-                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-database fa-2x"></i></div>
+                            <div class="icon-box mb-2 text-yellow"><i class="fa-solid fa-database fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Uso de MySQL</h5>
                             <p class="card-text text-muted small">Gestión, diseño y administración de bases de datos relacionales eficientes y seguras.</p>
+                            <span class="text-yellow small fw-semibold">Ver más detalles <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta 3 -->
+
+                <!-- Tarjeta 3: Inteligencia Artificial -->
                 <div class="col-md-4">
-                    <div class="card tech-card h-100 p-4 border-0">
+                    <div class="card tech-card h-100 border-0 cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalIA">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?q=80&w=600" class="card-img-top tech-card-img" alt="Inteligencia Artificial">
                         <div class="card-body">
-                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-robot fa-2x"></i></div>
+                            <div class="icon-box mb-2 text-red"><i class="fa-solid fa-robot fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Inteligencia Artificial (IA)</h5>
                             <p class="card-text text-muted small">Aprovechamiento práctico de herramientas de IA para optimizar procesos técnicos e investigativos.</p>
+                            <span class="text-yellow small fw-semibold">Ver más detalles <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta 4 -->
+
+                <!-- Tarjeta 4: Emprendedores -->
                 <div class="col-md-4">
-                    <div class="card tech-card h-100 p-4 border-0">
+                    <div class="card tech-card h-100 border-0 cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalEmprendedores">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=600" class="card-img-top tech-card-img" alt="Apoyo a emprendedores">
                         <div class="card-body">
-                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-chart-line fa-2x"></i></div>
+                            <div class="icon-box mb-2 text-yellow"><i class="fa-solid fa-chart-line fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Apoyo para Emprendedores</h5>
                             <p class="card-text text-muted small">Módulos especializados para impulsar proyectos tecnológicos y emprendimientos digitales.</p>
+                            <span class="text-yellow small fw-semibold">Ver más detalles <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta 5 -->
+
+                <!-- Tarjeta 5: Programación -->
                 <div class="col-md-4">
-                    <div class="card tech-card h-100 p-4 border-0">
+                    <div class="card tech-card h-100 border-0 cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalProgramacion">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600" class="card-img-top tech-card-img" alt="Programacion de software">
                         <div class="card-body">
-                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-code fa-2x"></i></div>
+                            <div class="icon-box mb-2 text-red"><i class="fa-solid fa-code fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Lenguajes de Programación</h5>
                             <p class="card-text text-muted small">Práctica estructurada con múltiples lenguajes variados para el desarrollo de software.</p>
+                            <span class="text-yellow small fw-semibold">Ver más detalles <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta 6 -->
+
+                <!-- Tarjeta 6: Ciberseguridad -->
                 <div class="col-md-4">
-                    <div class="card tech-card h-100 p-4 border-0">
+                    <div class="card tech-card h-100 border-0 cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalCiberseguridad">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600" class="card-img-top tech-card-img" alt="Ciberseguridad y Redes">
                         <div class="card-body">
-                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-shield-halved fa-2x"></i></div>
+                            <div class="icon-box mb-2 text-yellow"><i class="fa-solid fa-shield-halved fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Ciberseguridad</h5>
                             <p class="card-text text-muted small">Fundamentos esenciales de protección de datos, redes seguras y prevención de vulnerabilidades.</p>
+                            <span class="text-yellow small fw-semibold">Ver más detalles <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta 7 (NUEVA: Inglés Técnico) -->
+
+                <!-- Tarjeta 7: Inglés Técnico -->
                 <div class="col-md-4">
-                    <div class="card tech-card h-100 p-4 border-0">
+                    <div class="card tech-card h-100 border-0 cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalIngles">
+                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=600" class="card-img-top tech-card-img" alt="Inglés Técnico e Informática">
                         <div class="card-body">
-                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-language fa-2x"></i></div>
+                            <div class="icon-box mb-2 text-red"><i class="fa-solid fa-language fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Inglés Técnico</h5>
                             <p class="card-text text-muted small">Dominio de terminología informática y documentación en inglés, clave para el sector global.</p>
+                            <span class="text-yellow small fw-semibold">Ver más detalles <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </div>
                 </div>
@@ -131,20 +151,24 @@
     <!-- Sección Instalaciones -->
     <section id="instalaciones" class="py-5 bg-dark-custom">
         <div class="container py-4">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h2 class="fw-bold text-red mb-3">Infraestructura y Equipamiento</h2>
-                    <p class="text-light-gray">Espacios corporativos diseñados para potenciar el aprendizaje práctico y profesional:</p>
-                    <ul class="list-unstyled text-light mt-3">
-                        <li class="mb-3"><i class="fa-solid fa-check text-yellow me-2"></i> **Centro de Cómputo:** Equipado para prácticas de redes, programación y mantenimiento.</li>
-                        <li><i class="fa-solid fa-check text-yellow me-2"></i> **Biblioteca:** Zona especializada de consulta, lectura e investigación técnica.</li>
-                    </ul>
+            <h2 class="fw-bold text-red mb-4 text-center">Infraestructura y Equipamiento</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <div class="card border-tech bg-black-custom overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=800" class="img-fluid" alt="Centro de Cómputo C.E. Refugio Sifontes">
+                        <div class="p-4">
+                            <h4 class="text-yellow h5 fw-bold"><i class="fa-solid fa-desktop me-2"></i>Centro de Cómputo Avanzado</h4>
+                            <p class="text-muted small mb-0">Equipado con servidores y ordenadores de alto rendimiento para prácticas intensivas de mantenimiento, bases de datos y desarrollo informático.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 text-center">
-                    <div class="p-5 border-tech rounded bg-black-custom shadow-sm">
-                        <i class="fa-solid fa-server fa-4x text-yellow mb-3"></i>
-                        <h4 class="text-white h5">Ambiente 100% Profesional</h4>
-                        <p class="text-muted small mb-0">Estándares orientados a la alta exigencia académica y laboral.</p>
+                <div class="col-md-6">
+                    <div class="card border-tech bg-black-custom overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800" class="img-fluid" alt="Biblioteca C.E. Refugio Sifontes">
+                        <div class="p-4">
+                            <h4 class="text-yellow h5 fw-bold"><i class="fa-solid fa-book me-2"></i>Biblioteca e Investigación</h4>
+                            <p class="text-muted small mb-0">Espacio tranquilo con bibliografía técnica actualizada, manuales de programación y zonas acondicionadas para la lectura e investigación académica.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,33 +182,140 @@
                 <div class="col-md-7">
                     <div class="card p-4 p-md-5 border-tech bg-dark-custom shadow-lg">
                         <div class="text-center mb-4">
-                            <h2 class="fw-bold text-yellow h3">Solicitud de Admisión</h2>
-                            <p class="text-muted small">Completa el formulario para recibir información detallada sobre el proceso de matrícula.</p>
+                            <h2 class="fw-bold text-yellow h3">Solicitud de Admisión 2026</h2>
+                            <p class="text-muted small">Completa el formulario para solicitar tu plaza o recibir atención personalizada sobre el proceso de matrícula.</p>
                         </div>
                         <form action="https://formspree.io/f/xbjnqpyz" method="POST">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label text-white small">Nombre del Estudiante o Padre/Madre</label>
-                                <input type="text" class="form-control input-tech" id="nombre" name="nombre" required placeholder="Nombre completo">
+                                <input type="text" class="form-control input-tech" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label text-white small">Correo Electrónico</label>
+                                <label for="email" class="form-label text-white small">Correo Electrónico de Contacto</label>
                                 <input type="email" class="form-control input-tech" id="email" name="email" required placeholder="correo@ejemplo.com">
                             </div>
                             <div class="mb-3">
                                 <label for="telefono" class="form-label text-white small">Teléfono / WhatsApp</label>
-                                <input type="tel" class="form-control input-tech" id="telefono" name="telefono" required placeholder="Número de contacto">
+                                <input type="tel" class="form-control input-tech" id="telefono" name="telefono" required placeholder="Ej. 7000-0000">
                             </div>
                             <div class="mb-3">
                                 <label for="mensaje" class="form-label text-white small">Consulta Adicional</label>
-                                <textarea class="form-control input-tech" id="mensaje" name="mensaje" rows="3" placeholder="Escribe tus dudas..."></textarea>
+                                <textarea class="form-control input-tech" id="mensaje" name="mensaje" rows="3" placeholder="Escribe tus preguntas sobre el bachillerato..."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-yellow w-100 py-2 mt-2 fw-semibold">Enviar Solicitud</button>
+                            <button type="submit" class="btn btn-yellow w-100 py-2 mt-2 fw-semibold">Enviar Solicitud de Matrícula</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- MODALES INFORMATIVOS (Ventanas Emergentes) -->
+
+    <!-- Modal 1: Mantenimiento -->
+    <div class="modal fade" id="modalMantenimiento" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-custom text-white border-tech">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-header-title text-yellow fw-bold"><i class="fa-solid fa-microchip me-2"></i>Mantenimiento de Computadoras</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-light-gray small">
+                    <p>En este módulo aprenderás el diagnóstico preventivo y correctivo de componentes de hardware, limpieza interna, reemplazo de piezas, instalación y optimización de sistemas operativos (Windows y Linux), además de ensamblaje completo de equipos informáticos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: MySQL -->
+    <div class="modal fade" id="modalMySQL" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-custom text-white border-tech">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-header-title text-yellow fw-bold"><i class="fa-solid fa-database me-2"></i>Gestión de Bases de Datos (MySQL)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-light-gray small">
+                    <p>El estudiante desarrollará destrezas para diseñar esquemas de datos relacionales, redactar consultas complejas mediante sintaxis SQL, optimizar la estructuración de la información y conectar bases de datos relacionales con aplicaciones informáticas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Inteligencia Artificial -->
+    <div class="modal fade" id="modalIA" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-custom text-white border-tech">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-header-title text-yellow fw-bold"><i class="fa-solid fa-robot me-2"></i>Aplicación de Inteligencia Artificial</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-light-gray small">
+                    <p>Enfoque moderno en la integración de modelos de lenguaje y herramientas de automatización con IA. Los alumnos comprenderán el Prompt Engineering, la ética de la IA y cómo aplicar la tecnología en el análisis de datos y desarrollo tecnológico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Emprendedores -->
+    <div class="modal fade" id="modalEmprendedores" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-custom text-white border-tech">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-header-title text-yellow fw-bold"><i class="fa-solid fa-chart-line me-2"></i>Módulos de Apoyo para Emprendedores</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-light-gray small">
+                    <p>Orientado a fomentar la visión de negocios dentro del sector de las Tecnologías de la Información. Incluye formulación de planes de negocio, gestión de proyectos tecnológicos y estrategias de innovación digital.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Programación -->
+    <div class="modal fade" id="modalProgramacion" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-custom text-white border-tech">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-header-title text-yellow fw-bold"><i class="fa-solid fa-code me-2"></i>Lenguajes de Programación</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-light-gray small">
+                    <p>Enseñanza práctica de lógica de programación y desarrollo con lenguajes clave de la industria (como HTML/CSS, JavaScript, PHP, entre otros), permitiendo al estudiante comprender la arquitectura de aplicaciones web y de escritorio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Ciberseguridad -->
+    <div class="modal fade" id="modalCiberseguridad" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-custom text-white border-tech">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-header-title text-yellow fw-bold"><i class="fa-solid fa-shield-halved me-2"></i>Ciberseguridad y Redes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-light-gray small">
+                    <p>Se introducen los conceptos fundamentales de seguridad informática: protección de redes cableadas e inalámbricas, buenas prácticas de encriptación de datos, prevención de phishing y configuración de firewalls.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Inglés Técnico -->
+    <div class="modal fade" id="modalIngles" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-custom text-white border-tech">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-header-title text-yellow fw-bold"><i class="fa-solid fa-language me-2"></i>Inglés Técnico Informático</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-light-gray small">
+                    <p>Capacitación en la lectura e interpretación de manuales técnicos en inglés, documentación oficial de software, sintaxis de código y preparación para entrevistas laborales en entornos tecnológicos multinacionales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Pie de Página -->
     <footer class="bg-black text-center py-4 border-top border-dark">
