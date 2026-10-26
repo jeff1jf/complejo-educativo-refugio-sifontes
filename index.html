@@ -8,18 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome para Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Estilos Personalizados Dark/Tech -->
+    <!-- Estilos Personalizados Elegantes -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg custom-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
         <div class="container">
-            <a class="navbar-brand fw-bold text-yellow" href="index.html">
+            <a class="navbar-brand fw-semibold text-yellow" href="index.html">
                 <i class="fa-solid fa-terminal me-2"></i>C.E. Refugio Sifontes
             </a>
-            <button class="navbar-toggler border-red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -36,81 +36,91 @@
     <!-- Banner Principal (Hero) -->
     <header class="hero-section text-white text-center d-flex align-items-center">
         <div class="container py-5">
-            <span class="badge bg-red mb-3 px-3 py-2 text-uppercase fw-bold tracking-wide">Bachillerato Técnico Vocacional</span>
-            <h1 class="display-4 fw-bold text-uppercase text-glow">Infraestructura Tecnológica y Servicios Informáticos</h1>
-            <p class="lead my-3 text-light-gray">Domina el hardware, la ciberseguridad, bases de datos, desarrollo de software y herramientas de Inteligencia Artificial.</p>
+            <span class="badge badge-tech mb-3 px-3 py-2 text-uppercase fw-semibold">Bachillerato Técnico Vocacional</span>
+            <h1 class="display-5 fw-bold text-uppercase tracking-tight">Infraestructura Tecnológica y Servicios Informáticos</h1>
+            <p class="lead my-3 text-light-gray mx-auto" style="max-width: 700px;">Formación profesional de alto nivel en hardware, ciberseguridad, bases de datos, desarrollo, Inteligencia Artificial e Inglés Técnico.</p>
             <div class="mt-4">
-                <a href="#admision" class="btn btn-yellow btn-lg fw-bold me-2 mb-2 shadow-hover">Solicitar Matrícula</a>
-                <a href="#especialidad" class="btn btn-outline-red btn-lg fw-bold mb-2">Explorar Áreas</a>
+                <a href="#admision" class="btn btn-yellow px-4 py-2 me-2 mb-2">Solicitar Matrícula</a>
+                <a href="#especialidad" class="btn btn-outline-red px-4 py-2 mb-2">Explorar Áreas</a>
             </div>
         </div>
     </header>
 
-    <!-- Sección Especialidades / Áreas Clave (Interactivo con Tarjetas) -->
+    <!-- Sección Especialidades / Áreas Clave -->
     <section id="especialidad" class="py-5 bg-black-custom">
-        <div class="container">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="fw-bold text-yellow">Áreas Clave de Formación</h2>
-                <p class="text-muted">Un plan de estudio moderno adaptado a las demandas tecnológicas actuales.</p>
+                <p class="text-muted">Competencias técnicas diseñadas para la alta exigencia del mercado actual.</p>
             </div>
             <div class="row g-4">
                 <!-- Tarjeta 1 -->
                 <div class="col-md-4">
                     <div class="card tech-card h-100 p-4 border-0">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-microchip fa-3x"></i></div>
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-microchip fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Mantenimiento de Computadoras</h5>
-                            <p class="card-text text-muted">Diagnóstico, reparación física y lógica de equipos de cómputo y ensamblaje avanzado.</p>
+                            <p class="card-text text-muted small">Diagnóstico, reparación física y lógica de equipos de cómputo y ensamblaje avanzado.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta 2 -->
                 <div class="col-md-4">
                     <div class="card tech-card h-100 p-4 border-0">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-database fa-3x"></i></div>
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-database fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Uso de MySQL</h5>
-                            <p class="card-text text-muted">Gestión, diseño y administración de bases de datos relacionales eficientes y seguras.</p>
+                            <p class="card-text text-muted small">Gestión, diseño y administración de bases de datos relacionales eficientes y seguras.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta 3 -->
                 <div class="col-md-4">
                     <div class="card tech-card h-100 p-4 border-0">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-robot fa-3x"></i></div>
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-robot fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Inteligencia Artificial (IA)</h5>
-                            <p class="card-text text-muted">Aprendizaje y aprovechamiento práctico de herramientas de IA para optimizar procesos técnicos.</p>
+                            <p class="card-text text-muted small">Aprovechamiento práctico de herramientas de IA para optimizar procesos técnicos e investigativos.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta 4 -->
                 <div class="col-md-4">
                     <div class="card tech-card h-100 p-4 border-0">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-chart-line fa-3x"></i></div>
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-chart-line fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Apoyo para Emprendedores</h5>
-                            <p class="card-text text-muted">Módulos especializados para impulsar proyectos tecnológicos y emprendimientos digitales.</p>
+                            <p class="card-text text-muted small">Módulos especializados para impulsar proyectos tecnológicos y emprendimientos digitales.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta 5 -->
                 <div class="col-md-4">
                     <div class="card tech-card h-100 p-4 border-0">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-code fa-3x"></i></div>
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-code fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Lenguajes de Programación</h5>
-                            <p class="card-text text-muted">Práctica con múltiples lenguajes de programación variados para la creación de software funcional.</p>
+                            <p class="card-text text-muted small">Práctica estructurada con múltiples lenguajes variados para el desarrollo de software.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta 6 -->
                 <div class="col-md-4">
                     <div class="card tech-card h-100 p-4 border-0">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-shield-halved fa-3x"></i></div>
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-yellow"><i class="fa-solid fa-shield-halved fa-2x"></i></div>
                             <h5 class="card-title fw-bold text-white">Ciberseguridad</h5>
-                            <p class="card-text text-muted">Fundamentos de protección de datos, redes seguras y prevención de vulnerabilidades informáticas.</p>
+                            <p class="card-text text-muted small">Fundamentos esenciales de protección de datos, redes seguras y prevención de vulnerabilidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 7 (NUEVA: Inglés Técnico) -->
+                <div class="col-md-4">
+                    <div class="card tech-card h-100 p-4 border-0">
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-red"><i class="fa-solid fa-language fa-2x"></i></div>
+                            <h5 class="card-title fw-bold text-white">Inglés Técnico</h5>
+                            <p class="card-text text-muted small">Dominio de terminología informática y documentación en inglés, clave para el sector global.</p>
                         </div>
                     </div>
                 </div>
@@ -120,56 +130,55 @@
 
     <!-- Sección Instalaciones -->
     <section id="instalaciones" class="py-5 bg-dark-custom">
-        <div class="container">
+        <div class="container py-4">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
                     <h2 class="fw-bold text-red mb-3">Infraestructura y Equipamiento</h2>
-                    <p class="text-light-gray">Contamos con espacios diseñados para potenciar el aprendizaje práctico de nuestros estudiantes:</p>
-                    <ul class="list-unstyled text-light">
-                        <li class="mb-3"><i class="fa-solid fa-circle-check text-yellow me-2"></i> **Centro de Cómputo:** Equipado para prácticas de redes, programación, mantenimiento y simulación.</li>
-                        <li><i class="fa-solid fa-circle-check text-yellow me-2"></i> **Biblioteca:** Espacio de consulta bibliográfica e investigación tecnológica y general.</li>
+                    <p class="text-light-gray">Espacios corporativos diseñados para potenciar el aprendizaje práctico y profesional:</p>
+                    <ul class="list-unstyled text-light mt-3">
+                        <li class="mb-3"><i class="fa-solid fa-check text-yellow me-2"></i> **Centro de Cómputo:** Equipado para prácticas de redes, programación y mantenimiento.</li>
+                        <li><i class="fa-solid fa-check text-yellow me-2"></i> **Biblioteca:** Zona especializada de consulta, lectura e investigación técnica.</li>
                     </ul>
                 </div>
                 <div class="col-md-6 text-center">
-                    <div class="p-4 border-tech rounded bg-black-custom shadow-lg">
-                        <i class="fa-solid fa-server fa-5x text-yellow mb-3"></i>
-                        <h4 class="text-white">Ambiente 100% Práctico</h4>
-                        <p class="text-muted small">Preparación directa para los retos del mundo tecnológico actual.</p>
+                    <div class="p-5 border-tech rounded bg-black-custom shadow-sm">
+                        <i class="fa-solid fa-server fa-4x text-yellow mb-3"></i>
+                        <h4 class="text-white h5">Ambiente 100% Profesional</h4>
+                        <p class="text-muted small mb-0">Estándares orientados a la alta exigencia académica y laboral.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Formulario de Admisión / Matrícula Directa -->
-    <section id="admision" class="py-5 bg-black-custom border-top border-dark">
-        <div class="container">
+    <!-- Sección Formulario de Admisión -->
+    <section id="admision" class="py-5 bg-black-custom">
+        <div class="container py-4">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <div class="card p-4 p-md-5 border-tech bg-dark-custom shadow-lg">
                         <div class="text-center mb-4">
-                            <h2 class="fw-bold text-yellow">Solicitud de Matrícula y Admisión</h2>
-                            <p class="text-muted small">¿Interesado en el Técnico en Infraestructura Tecnológica y Servicios Informáticos? Envía tus datos y nos pondremos en contacto.</p>
+                            <h2 class="fw-bold text-yellow h3">Solicitud de Admisión</h2>
+                            <p class="text-muted small">Completa el formulario para recibir información detallada sobre el proceso de matrícula.</p>
                         </div>
-                        <!-- Formulario conectado a Formspree -->
                         <form action="https://formspree.io/f/xbjnqpyz" method="POST">
                             <div class="mb-3">
-                                <label for="nombre" class="form-label text-white">Nombre del Estudiante o Padre/Madre</label>
+                                <label for="nombre" class="form-label text-white small">Nombre del Estudiante o Padre/Madre</label>
                                 <input type="text" class="form-control input-tech" id="nombre" name="nombre" required placeholder="Nombre completo">
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label text-white">Correo Electrónico de Contacto</label>
+                                <label for="email" class="form-label text-white small">Correo Electrónico</label>
                                 <input type="email" class="form-control input-tech" id="email" name="email" required placeholder="correo@ejemplo.com">
                             </div>
                             <div class="mb-3">
-                                <label for="telefono" class="form-label text-white">Número de Teléfono / WhatsApp</label>
+                                <label for="telefono" class="form-label text-white small">Teléfono / WhatsApp</label>
                                 <input type="tel" class="form-control input-tech" id="telefono" name="telefono" required placeholder="Número de contacto">
                             </div>
                             <div class="mb-3">
-                                <label for="mensaje" class="form-label text-white">Pregunta o Comentario Adicional</label>
-                                <textarea class="form-control input-tech" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tus dudas sobre el proceso de admisión..."></textarea>
+                                <label for="mensaje" class="form-label text-white small">Consulta Adicional</label>
+                                <textarea class="form-control input-tech" id="mensaje" name="mensaje" rows="3" placeholder="Escribe tus dudas..."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-yellow w-100 fw-bold py-3 mt-2">Enviar Solicitud de Admisión</button>
+                            <button type="submit" class="btn btn-yellow w-100 py-2 mt-2 fw-semibold">Enviar Solicitud</button>
                         </form>
                     </div>
                 </div>
@@ -180,8 +189,8 @@
     <!-- Pie de Página -->
     <footer class="bg-black text-center py-4 border-top border-dark">
         <div class="container">
-            <p class="mb-1 text-muted">&copy; 2026 Complejo Educativo Refugio Sifontes.</p>
-            <p class="small text-red mb-0">Bachillerato Técnico Vocacional en Infraestructura Tecnológica y Servicios Informáticos.</p>
+            <p class="mb-1 text-muted small">&copy; 2026 Complejo Educativo Refugio Sifontes.</p>
+            <p class="small text-red mb-0" style="font-size: 0.8rem;">Bachillerato Técnico Vocacional en Infraestructura Tecnológica y Servicios Informáticos.</p>
         </div>
     </footer>
 
