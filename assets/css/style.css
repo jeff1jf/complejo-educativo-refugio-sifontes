@@ -1,124 +1,144 @@
-/* Estilos Globales: Fondo Negro y Estética Tech */
+/* ==========================================
+   ESTILOS NEÓN - C.E. REFUGIO SIFONTES
+   ========================================== */
+
+:root {
+    --bg-deep: #000000;
+    --bg-card: #0a0a0a;
+    --neon-yellow: #f3e600;
+    --neon-red: #ff073a;
+    --text-main: #f5f5f5;
+    --text-muted: #a0a0a0;
+}
+
 body {
-    background-color: #050505;
-    color: #e0e0e0;
+    background-color: var(--bg-deep) !important;
+    color: var(--text-main) !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
 
-/* Colores personalizados */
+/* Fondos personalizados */
 .bg-black-custom {
-    background-color: #080808;
+    background-color: var(--bg-deep) !important;
 }
 
 .bg-dark-custom {
-    background-color: #121212;
+    background-color: var(--bg-card) !important;
 }
 
+/* Colores de Texto Neón */
 .text-yellow {
-    color: #ffcc00 !important;
+    color: var(--neon-yellow) !important;
+    text-shadow: 0 0 10px rgba(243, 230, 0, 0.4);
 }
 
 .text-red {
-    color: #ff3333 !important;
+    color: var(--neon-red) !important;
+    text-shadow: 0 0 10px rgba(255, 7, 58, 0.4);
 }
 
 .text-light-gray {
-    color: #cccccc;
+    color: var(--text-muted);
 }
 
-/* Botones personalizados */
+/* Botones con efecto Neón Interactivo */
 .btn-yellow {
-    background-color: #ffcc00;
-    color: #000;
-    border: 2px solid #ffcc00;
-    transition: all 0.3s ease;
+    background-color: var(--neon-yellow);
+    color: #000000;
+    border: 2px solid var(--neon-yellow);
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-yellow:hover {
-    background-color: #e6b800;
-    border-color: #e6b800;
-    color: #000;
-    transform: translateY(-2px);
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+    background-color: #000000;
+    color: var(--neon-yellow);
+    border-color: var(--neon-yellow);
+    box-shadow: 0 0 20px var(--neon-yellow);
+    transform: translateY(-3px);
 }
 
 .btn-outline-red {
-    color: #ff3333;
-    border: 2px solid #ff3333;
+    color: var(--neon-red);
+    border: 2px solid var(--neon-red);
     background: transparent;
-    transition: all 0.3s ease;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-outline-red:hover {
-    background-color: #ff3333;
-    color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 0 15px rgba(255, 51, 51, 0.4);
+    background-color: var(--neon-red);
+    color: #ffffff;
+    box-shadow: 0 0 20px var(--neon-red);
+    transform: translateY(-3px);
 }
 
 .bg-red {
-    background-color: #ff3333 !important;
+    background-color: var(--neon-red) !important;
     color: #fff;
+    box-shadow: 0 0 12px rgba(255, 7, 58, 0.6);
 }
 
-/* Barra de Navegación Interactiva */
+/* Barra de Navegación */
 .custom-nav {
-    background-color: rgba(8, 8, 8, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #222;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid #1a1a1a;
 }
 
 .navbar-nav .nav-link {
-    color: #ddd !important;
+    color: #e0e0e0 !important;
     font-weight: 500;
     transition: color 0.2s ease;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffcc00 !important;
-    text-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+    color: var(--neon-yellow) !important;
+    text-shadow: 0 0 10px var(--neon-yellow);
 }
 
-/* Banner Hero con toque dinámico */
+/* Banner Hero con atmósfera oscura y destellos */
 .hero-section {
-    background: linear-gradient(rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.8)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), 
                 url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200') center/cover no-repeat;
     min-height: 85vh;
+    border-bottom: 3px solid var(--neon-red);
 }
 
-/* Tarjetas Interactivas (Efecto Elevación y Brillo Tech) */
+/* Tarjetas con bordes e iluminación neón interactiva */
 .tech-card {
-    background-color: #111111;
+    background-color: #080808;
     border: 1px solid #222 !important;
-    border-radius: 10px;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
 }
 
 .tech-card:hover {
     transform: translateY(-8px);
-    border-color: #ffcc00 !important;
-    box-shadow: 0 10px 25px rgba(255, 204, 0, 0.15);
+    border-color: var(--neon-yellow) !important;
+    box-shadow: 0 0 20px rgba(243, 230, 0, 0.25);
 }
 
-/* Tarjeta contenedora de secciones especiales */
+/* Contenedores especiales */
 .border-tech {
-    border: 1px solid #252525;
+    border: 1px solid #262626;
     border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 7, 58, 0.1);
 }
 
-/* Formularios adaptados al modo oscuro */
+/* Formularios adaptados al estilo tech-neón */
 .input-tech {
-    background-color: #1a1a1a !important;
+    background-color: #0d0d0d !important;
     border: 1px solid #333 !important;
     color: #fff !important;
     transition: all 0.3s ease;
 }
 
 .input-tech:focus {
-    background-color: #1a1a1a !important;
-    border-color: #ffcc00 !important;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.25);
+    background-color: #0d0d0d !important;
+    border-color: var(--neon-yellow) !important;
+    box-shadow: 0 0 12px rgba(243, 230, 0, 0.4);
     color: #fff !important;
 }
