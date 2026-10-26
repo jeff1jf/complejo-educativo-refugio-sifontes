@@ -1,37 +1,124 @@
-/* Estilos Institucionales C.E. Refugio Sifontes */
-
-/* Color azul institucional para la barra de navegación */
-.bg-institucional {
-    background-color: #0d3b66 !important;
+/* Estilos Globales: Fondo Negro y Estética Tech */
+body {
+    background-color: #050505;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
-/* Banner de bienvenida */
+/* Colores personalizados */
+.bg-black-custom {
+    background-color: #080808;
+}
+
+.bg-dark-custom {
+    background-color: #121212;
+}
+
+.text-yellow {
+    color: #ffcc00 !important;
+}
+
+.text-red {
+    color: #ff3333 !important;
+}
+
+.text-light-gray {
+    color: #cccccc;
+}
+
+/* Botones personalizados */
+.btn-yellow {
+    background-color: #ffcc00;
+    color: #000;
+    border: 2px solid #ffcc00;
+    transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+    background-color: #e6b800;
+    border-color: #e6b800;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+}
+
+.btn-outline-red {
+    color: #ff3333;
+    border: 2px solid #ff3333;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-red:hover {
+    background-color: #ff3333;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.4);
+}
+
+.bg-red {
+    background-color: #ff3333 !important;
+    color: #fff;
+}
+
+/* Barra de Navegación Interactiva */
+.custom-nav {
+    background-color: rgba(8, 8, 8, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+    text-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+}
+
+/* Banner Hero con toque dinámico */
 .hero-section {
-    background: linear-gradient(rgba(13, 59, 102, 0.85), rgba(13, 59, 102, 0.85)), 
-                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200') center/cover no-repeat;
-    min-height: 60vh;
+    background: linear-gradient(rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.8)), 
+                url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200') center/cover no-repeat;
+    min-height: 85vh;
 }
 
-/* Color primario personalizado */
-.text-primary {
-    color: #0d3b66 !important;
+/* Tarjetas Interactivas (Efecto Elevación y Brillo Tech) */
+.tech-card {
+    background-color: #111111;
+    border: 1px solid #222 !important;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-primary {
-    background-color: #0d3b66;
-    border-color: #0d3b66;
+.tech-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffcc00 !important;
+    box-shadow: 0 10px 25px rgba(255, 204, 0, 0.15);
 }
 
-.btn-primary:hover {
-    background-color: #092846;
-    border-color: #092846;
+/* Tarjeta contenedora de secciones especiales */
+.border-tech {
+    border: 1px solid #252525;
+    border-radius: 12px;
 }
 
-/* Transiciones suaves en las tarjetas */
-.card {
-    transition: transform 0.2s ease, shadow 0.2s ease;
+/* Formularios adaptados al modo oscuro */
+.input-tech {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333 !important;
+    color: #fff !important;
+    transition: all 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.input-tech:focus {
+    background-color: #1a1a1a !important;
+    border-color: #ffcc00 !important;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.25);
+    color: #fff !important;
 }
